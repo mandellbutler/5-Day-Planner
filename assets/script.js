@@ -3,15 +3,13 @@ console.log("Hello, Mandell...I am loaded");
 //=====================DEPENDENCIES
 
 //current day & time
-    // moments.js class="lead"
-        //create
+//create & place using moment.js
 var currentDay = moment().format("dddd, MMMM Do YYYY")
-        //build
-currentDay.addClass('#currentDay');
-        //place
+$("#currentDay").append(currentDay);
 
 var currentTime = moment().format("LT")
-console.log(currentTime)
+$("currentTime").append("#currentTime")
+
 //hour of the day
 
 //save button
