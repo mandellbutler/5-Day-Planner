@@ -1,7 +1,14 @@
+console.log("Hello, Mandell...I am loaded");
+
 //=====================DEPENDENCIES
 
-//current day
+//current day & time
+    // moments.js class="lead"
+var currentDay = moment().format("dddd, MMMM Do YYYY")
+console.log(currentDay)
 
+var currentTime = moment().format("LT")
+console.log(currentTime)
 //hour of the day
 
 //save button
@@ -19,6 +26,7 @@
 //CONTAINER
 
 //color coded time blocks
+    //is the current time < > or = to each of the time slots?
 
 //hours presented in 9-5 format
 
@@ -38,7 +46,7 @@
 // WHEN I click into a timeblock
     //I can enter an event
 
-    
+
 // WHEN I click the save button for that timeblock
     //the text for that event is saved in local storage
 
