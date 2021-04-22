@@ -4,8 +4,11 @@ console.log("Hello, Mandell...I am loaded");
 
 //current day & time
     // moments.js class="lead"
+        //create
 var currentDay = moment().format("dddd, MMMM Do YYYY")
-console.log(currentDay)
+        //build
+currentDay.addClass('#currentDay');
+        //place
 
 var currentTime = moment().format("LT")
 console.log(currentTime)
