@@ -1,5 +1,4 @@
 //=====================DEPENDENCIES
-
 //current day & time
 //create & place using moment.js
 var currentDay = moment().format("dddd LL")
@@ -18,9 +17,6 @@ console.log(currentTime)
 
 //local storage
 
-
-
-
 //=====================STARTING DATA
 
 //color changing based on time of the day via moment.js
@@ -34,7 +30,7 @@ function colorCode() {
             $(this).removeClass("future");
             $(this).removeClass("present");
         }
-        else if (timeBlock === currentTime) {
+        else if (timeBlock == currentTime) {
             $(this).removeClass("past");
             $(this).addClass("present");
             $(this).removeClass("future");
