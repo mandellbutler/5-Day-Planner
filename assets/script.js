@@ -18,10 +18,36 @@ console.log(currentTime)
 
 //local storage
 
-//color changing based on time of the day
+
 
 
 //=====================STARTING DATA
+
+//color changing based on time of the day via moment.js
+function colorCode() {
+    // loop over time blocks
+    $(".time-block").each(function () {
+        var timeBlock = parseInt($(this).attr("id").split("block")[1]); //turns string into int for comparisons
+        //conditionals
+        if (timeBlock < currentTime) {
+            $(this).addClass("past");
+            $(this).removeClass("future");
+            $(this).removeClass("present");
+        }
+        else if (timeBlock === currentTime) {
+            $(this).removeClass("past");
+            $(this).addClass("present");
+            $(this).removeClass("future");
+        }
+        else {
+            $(this).removeClass("present");
+            $(this).removeClass("past");
+            $(this).addClass("future");
+        }
+    })
+}
+colorCode();
+
 
 //CONTAINER
 
@@ -32,23 +58,23 @@ console.log(currentTime)
 
 //======================FUNCTIONS
 
-function colorCode() {
-    if (currentTime > 8) {
-        $("#textArea8").addClass("past");
-    } else if (currentTime >= 8 && currentTime < 9) {
-    $('#textArea8').addClass('present');
-    } else if (currentTime < 9) {
-    $('#textArea8').addClass('future');
-    }
-    if (currentTime > 9) {
-        $("#textArea8").addClass("past");
-    } else if (currentTime >= 9 && currentTime < 10) {
-    $('#textArea8').addClass('present');
-    } else if (currentTime < 9) {
-    $('#textArea8').addClass('future');
-    }
-} colorCode()
-console.log(colorCode)
+// function colorCode() {
+//     if (currentTime > 1) {
+//         $("#textArea8").addClass("past");
+//     // } else if (currentTime >= 8 && currentTime < 9) {
+//     // $('#textArea8').addClass('present');
+//     // } else if (currentTime < 9) {
+//     // $('#textArea8').addClass('future');
+//     // }
+//     // if (currentTime > 9) {
+//     //     $("#textArea8").addClass("past");
+//     // } else if (currentTime >= 9 && currentTime < 10) {
+//     // $('#textArea8').addClass('present');
+//     // } else if (currentTime < 9) {
+//     // $('#textArea8').addClass('future');
+//     // }
+// } colorCode()
+// console.log(colorCode)
 
 //====================USER INTERACTIONS
 
@@ -72,8 +98,6 @@ console.log(colorCode)
 
 
 //=====================INITIALIZATION
-
-
 
 
 
