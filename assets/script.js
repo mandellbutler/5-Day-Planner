@@ -1,18 +1,18 @@
-console.log("Hello, Mandell...I am loaded");
-
 //=====================DEPENDENCIES
 
 //current day & time
 //create & place using moment.js
-var currentDay = moment().format("dddd, MMMM Do YYYY")
+var currentDay = moment().format("dddd LL")
 $("#currentDay").append(currentDay);
 
-var currentTime = moment().format("LT")
+//Calcutated in Military time for comparison function
+var currentTime = moment().format("HH:mm")
 $("currentTime").append("#currentTime")
 
-//hour of the day
+var now = new Date().getHours();
+console.log("This is NOW:" + now)
 
-//save button
+//save buttons
 
 //ability to scroll
 
@@ -29,8 +29,19 @@ $("currentTime").append("#currentTime")
 //color coded time blocks
     //is the current time < > or = to each of the time slots?
 
-//hours presented in 9-5 format
+//hours presented from 8-5pm
+// var schedule = {
+//     {
+//         8: ""
+//     }
+// }
 
+//======================FUNCTIONS
+
+//render schedule
+function renderSchedule() {
+    console.log("rendering schedule for you homie:")
+}
 //====================USER INTERACTIONS
 
 // WHEN I open the planner
@@ -53,7 +64,7 @@ $("currentTime").append("#currentTime")
 
 
 //=====================INITIALIZATION
-
+renderSchedule();
 
 
 
