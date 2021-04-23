@@ -9,8 +9,7 @@ $("#currentDay").append(currentDay);
 var currentTime = moment().format("HH:mm")
 $("currentTime").append("#currentTime")
 
-var now = new Date().getHours();
-console.log("This is NOW:" + now)
+var timeBlockDiv = $("time-block")
 
 //save buttons
 
@@ -29,17 +28,32 @@ console.log("This is NOW:" + now)
 //color coded time blocks
     //is the current time < > or = to each of the time slots?
 
-//hours presented from 8-5pm
-// var schedule = {
-//     {
-//         8: ""
-//     }
-// }
+// hours presented from 8-5pm
+var schedule = [
+    {
+        hours: 8,
+        input: "",
+        button: "",
+    }
+]
 
 //======================FUNCTIONS
 
 //render schedule
 function renderSchedule() {
+    timeBlockDiv.empty();
+    //cycle through the hours on the schedule
+    schedule.forEach(function(schedule) {
+    //make a div for hour
+    var hourDiv = $('<div id="hours" class="hour col-sm-10 col-md-1">');
+    hourDiv.text = "8AM"
+    //add input
+    var textArea = $('<textarea class="textarea future desciption col-sm-10 col-md-10" id="8amTask" type="text">')
+    //add button
+    var saveBtn = $('<button class="saveBtn col-sm-10 col-md-1" type="button"><i class="far fa-save">') 
+    //place it in the time-block
+    timeBlockDiv.append(hourDiv, textArea, saveBtn);
+    })
     console.log("rendering schedule for you homie:")
 }
 //====================USER INTERACTIONS
