@@ -6,10 +6,9 @@ var currentDay = moment().format("dddd LL")
 $("#currentDay").append(currentDay);
 
 //Calcutated in Military time for comparison function
-var currentTime = moment().format("HH:mm")
-$("currentTime").append("#currentTime")
+var currentTime = moment().format("HH")
+console.log(currentTime)
 
-var timeBlockDiv = $("time-block")
 
 //save buttons
 
@@ -21,6 +20,7 @@ var timeBlockDiv = $("time-block")
 
 //color changing based on time of the day
 
+
 //=====================STARTING DATA
 
 //CONTAINER
@@ -28,34 +28,28 @@ var timeBlockDiv = $("time-block")
 //color coded time blocks
     //is the current time < > or = to each of the time slots?
 
-// hours presented from 8-5pm
-var schedule = [
-    {
-        hours: 8,
-        input: "",
-        button: "",
-    }
-]
+// hours presented from 8-5pM
 
 //======================FUNCTIONS
 
-//render schedule
-function renderSchedule() {
-    timeBlockDiv.empty();
-    //cycle through the hours on the schedule
-    schedule.forEach(function(schedule) {
-    //make a div for hour
-    var hourDiv = $('<div id="hours" class="hour col-sm-10 col-md-1">');
-    hourDiv.text = "8AM"
-    //add input
-    var textArea = $('<textarea class="textarea future desciption col-sm-10 col-md-10" id="8amTask" type="text">')
-    //add button
-    var saveBtn = $('<button class="saveBtn col-sm-10 col-md-1" type="button"><i class="far fa-save">') 
-    //place it in the time-block
-    timeBlockDiv.append(hourDiv, textArea, saveBtn);
-    })
-    console.log("rendering schedule for you homie:")
-}
+function colorCode() {
+    if (currentTime > 8) {
+        $("#textArea8").addClass("past");
+    } else if (currentTime >= 8 && currentTime < 9) {
+    $('#textArea8').addClass('present');
+    } else if (currentTime < 9) {
+    $('#textArea8').addClass('future');
+    }
+    if (currentTime > 9) {
+        $("#textArea8").addClass("past");
+    } else if (currentTime >= 9 && currentTime < 10) {
+    $('#textArea8').addClass('present');
+    } else if (currentTime < 9) {
+    $('#textArea8').addClass('future');
+    }
+} colorCode()
+console.log(colorCode)
+
 //====================USER INTERACTIONS
 
 // WHEN I open the planner
@@ -78,7 +72,6 @@ function renderSchedule() {
 
 
 //=====================INITIALIZATION
-renderSchedule();
 
 
 
