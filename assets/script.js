@@ -6,18 +6,16 @@ $("#currentDay").append(currentDay);
 
 //Calcutated in Military time for comparison function
 var currentTime = moment().format("HH")
-console.log(currentTime)
 
+var textInput = $(".description").text()
+console.log(textInput)
 
-//save buttons
-
-//ability to scroll
-
-//input area
-
-//local storage
-
+var saveBtn = $(".saveBtn")
+console.log(saveBtn)
 //=====================STARTING DATA
+
+
+//======================FUNCTIONS
 
 //color changing based on time of the day via moment.js
 function colorCode() {
@@ -44,50 +42,21 @@ function colorCode() {
 }
 colorCode();
 
-
-//CONTAINER
-
-//color coded time blocks
-    //is the current time < > or = to each of the time slots?
-
-// hours presented from 8-5pM
-
-//======================FUNCTIONS
-
-// function colorCode() {
-//     if (currentTime > 1) {
-//         $("#textArea8").addClass("past");
-//     // } else if (currentTime >= 8 && currentTime < 9) {
-//     // $('#textArea8').addClass('present');
-//     // } else if (currentTime < 9) {
-//     // $('#textArea8').addClass('future');
-//     // }
-//     // if (currentTime > 9) {
-//     //     $("#textArea8").addClass("past");
-//     // } else if (currentTime >= 9 && currentTime < 10) {
-//     // $('#textArea8').addClass('present');
-//     // } else if (currentTime < 9) {
-//     // $('#textArea8').addClass('future');
-//     // }
-// } colorCode()
-// console.log(colorCode)
-
 //====================USER INTERACTIONS
 
 // WHEN I open the planner
     //I am presented with a calendar
     //the current day is displayed at the top
-    //the planner displays a schedule of events
-
-
-// WHEN I scroll down
-    //I am presented with timeblocks for standard business hours
-    //timeblocks are color coded for past, present, or future
-
+    //the planner displays a schedule of event
 
 // WHEN I click into a timeblock
     //I can enter an event
 
+saveBtn.click(function () {
+    console.log(this);
+        
+
+});
 
 // WHEN I click the save button for that timeblock
     //the text for that event is saved in local storage
@@ -95,7 +64,7 @@ colorCode();
 
 //=====================INITIALIZATION
 
-
+//update description upon load
 
 
 
