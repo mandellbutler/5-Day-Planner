@@ -1,19 +1,43 @@
 //=====================DEPENDENCIES
 //current day & time
 //create & place using moment.js
-var currentDay = moment().format("dddd LL")
+var currentDay = moment().format("dddd LL");
 $("#currentDay").append(currentDay);
 
 //Calcutated in Military time for comparison function
-var currentTime = moment().format("HH")
+// var currentTime = moment().format("HH")
+var currentTime = moment().hour()
 
-var textInput = $(".description").text()
-console.log(textInput)
 
-var saveBtn = $(".saveBtn")
-console.log(saveBtn)
-//=====================STARTING DATA
+var LocalStorageKey = "Schedule"
+var schedule = {};
 
+var saveBtn = $('.saveBtn') //assigns function to the save buttons
+saveBtn.click(handleSave)
+
+function handleSave() { 
+    var row = $(this).siblings()
+    var hour = $(row[0]).text()
+    var text = $(row[1]).val()
+
+    schedule[hour] = text
+    SetSchedule();
+}
+GetSchedule();
+
+
+function SetSchedule() {
+    SetLocalStorage(LocalStorageKey, schedule)
+}
+function GetSchedule() {
+    schedule = GetLocalStorage(LocalStorageKey) || {}
+}
+function SetLocalStorage(key, value) {
+    localStorage.setItem(key, JSON.stringify(value))
+}
+function GetLocalStorage(key) {
+    return JSON.parse(localStorage.getItem(key))
+}
 
 //======================FUNCTIONS
 
@@ -22,21 +46,19 @@ function colorCode() {
     // loop over time blocks
     $(".time-block").each(function () {
         var timeBlock = parseInt($(this).attr("id").split("block")[1]); //turns string into int for comparisons
-        //conditionals
-        if (timeBlock < currentTime) {
-            $(this).addClass("past");
-            $(this).removeClass("future");
-            $(this).removeClass("present");
-        }
-        else if (timeBlock == currentTime) {
-            $(this).removeClass("past");
-            $(this).addClass("present");
-            $(this).removeClass("future");
-        }
-        else {
-            $(this).removeClass("present");
-            $(this).removeClass("past");
-            $(this).addClass("future");
+
+        var row = $(this).children()
+        var hour = $(row[0]).text()
+        var textarea = $(row[1])
+
+        textarea.val(schedule[hour])
+
+        if (timeBlock === currentTime) {
+            textarea.addClass("present")
+        } else if (timeBlock > currentTime) {
+            textarea.addClass("future")
+        } else {
+            textarea.addClass("past")
         }
     })
 }
@@ -52,19 +74,7 @@ colorCode();
 // WHEN I click into a timeblock
     //I can enter an event
 
-saveBtn.click(function () {
-    console.log(this);
-        
 
-});
-
-// WHEN I click the save button for that timeblock
-    //the text for that event is saved in local storage
-
-
-//=====================INITIALIZATION
-
-//update description upon load
 
 
 
