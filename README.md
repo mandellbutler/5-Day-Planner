@@ -13,7 +13,7 @@ This Day Planner application is a simple, yet efficient, tool to help organize y
 -The screen is reactive, adapting to both mobile and larger screen layouts.
 -With a swift click of a button, the user can be assured that their events will be saved, safe and secure thanks the planner's use of local storage. Simply refresh the page, and the information remains!
 
-##Development Tools:
+## Development Tools:
 -Moment.js 
 -JQuery 
 -Vanilla Javascript
