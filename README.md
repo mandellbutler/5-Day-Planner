@@ -6,7 +6,7 @@ This Day Planner application is a simple, yet efficient, tool to help organize y
 
 <img src="assets/images/planner.png" width="400">
 
-##Features
+## Features
 
 -When the planner is opened, the current day is prominently displayed at the top of the page.
 -With the use of color coding, the user can easily distinguish past, present and future events.
