@@ -19,7 +19,7 @@ This Day Planner application is a simple, yet efficient, tool to help organize y
 # Installation
 No installation required. Please see link to the deployed application:
 
-* ### Deployed Application - https://mandellbutler.github.io/Day-Planner/
+* Deployed Application - https://mandellbutler.github.io/Day-Planner/
 
 # Usage
 
