@@ -7,15 +7,13 @@ $("#currentDay").append(currentDay);
 //Calcutated in Military time for comparison function
 // var currentTime = moment().format("HH")
 var currentTime = moment().hour()
-
-
 var LocalStorageKey = "Schedule"
 var schedule = {};
 
 var saveBtn = $('.saveBtn') //assigns function to the save buttons
 saveBtn.click(handleSave)
 
-function handleSave() { 
+function handleSave() {
     var row = $(this).siblings()
     var hour = $(row[0]).text()
     var text = $(row[1]).val()
@@ -63,16 +61,6 @@ function colorCode() {
     })
 }
 colorCode();
-
-//====================USER INTERACTIONS
-
-// WHEN I open the planner
-    //I am presented with a calendar
-    //the current day is displayed at the top
-    //the planner displays a schedule of event
-
-// WHEN I click into a timeblock
-    //I can enter an event
 
 
 
