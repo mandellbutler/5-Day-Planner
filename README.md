@@ -42,6 +42,6 @@ Please feel free to contact me, should you have any questions!
 
 - Github: https://github.com/mandellbutler
 
-- [<a href="https://www.linkedin.com/in/mandellbutler/"><img align="left" alt="medium" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />] https://www.linkedin.com/in/mandellbutler/
+- [<a href="https://www.linkedin.com/in/mandellbutler/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />]
 
 - :email: mandell.butler@outlook.com
