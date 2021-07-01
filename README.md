@@ -34,11 +34,14 @@ The design of this application was made possible with the following Development 
 * Moment.js 
 * JQuery 
 * Vanilla Javascript
+* Bootstrap
 
 # Contact
 
 Please feel free to contact me, should you have any questions!
 
-Github: https://github.com/mandellbutler
+- Github: https://github.com/mandellbutler
 
-Email: mandell.butler@outlook.com
+- LinkedIn: https://www.linkedin.com/in/mandellbutler/ [img< align="left" alt="medium" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />] [blog]
+
+- Email: mandell.butler@outlook.com
