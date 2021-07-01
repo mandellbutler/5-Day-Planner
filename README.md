@@ -1,16 +1,14 @@
 # Day-Planner
 
-# Redux Store
-
 ## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
+- [Description](##description)
+- [Installation](##installation)
 - [Usage](##usage)
 - [Installation](##installation)
 - [Technology](##technology)
 - [Contact](##contact)
 
-# Description
+## Description
 
 This Day Planner application is a simple, yet efficient, tool to help organize your work day.  
 
@@ -37,7 +35,7 @@ The design of this application was made possible with the following Development 
 * JQuery 
 * Vanilla Javascript
 
-# Contact
+## Contact
 
 Please feel free to contact me, should you have any questions!
 
