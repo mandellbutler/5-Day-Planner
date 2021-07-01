@@ -40,7 +40,7 @@ The design of this application was made possible with the following Development 
 
 Please feel free to contact me, should you have any questions!
 
-- Github: https://github.com/mandellbutler
+- <a href="https://github.com/mandellbutler"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 
 - <a href="https://www.linkedin.com/in/mandellbutler/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 
