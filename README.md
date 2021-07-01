@@ -1,14 +1,14 @@
 # Day-Planner
 
-## Table of Contents
-- [Description](##description)
-- [Installation](##installation)
-- [Usage](##usage)
-- [Installation](##installation)
-- [Technology](##technology)
-- [Contact](##contact)
 
-## Description
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technology](#technology)
+- [Contact](#contact)
+
+# Description
 
 This Day Planner application is a simple, yet efficient, tool to help organize your work day.  
 
@@ -16,26 +16,26 @@ This Day Planner application is a simple, yet efficient, tool to help organize y
 
 <img src="assets/images/planner.png" width="400">
 
-## Installation
+# Installation
 No installation required. Please see link to the deployed application:
 
 * [Deployed Application] - https://mandellbutler.github.io/Day-Planner/
 
-## Usage
+# Usage
 
 * When the planner is opened, the current day is prominently displayed at the top of the page.
 * With the use of color coding, the user can easily distinguish past, present and future events.
 * The screen is reactive, adapting to both mobile and larger screen layouts.
 * With a swift click of a button, the user can be assured that their events will be saved, safe and secure thanks the planner's use of local storage. Simply refresh the page, and the information remains!
 
-## Technology
+# Technology
 The design of this application was made possible with the following Development Tools:
 
 * Moment.js 
 * JQuery 
 * Vanilla Javascript
 
-## Contact
+# Contact
 
 Please feel free to contact me, should you have any questions!
 
