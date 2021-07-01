@@ -44,4 +44,4 @@ Please feel free to contact me, should you have any questions!
 
 - [<img align="left" alt="medium" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />] https://www.linkedin.com/in/mandellbutler/
 
-- Email: mandell.butler@outlook.com
+- :email: mandell.butler@outlook.com
