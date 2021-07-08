@@ -28,6 +28,8 @@ No installation required. Please see link to the deployed application:
 * The screen is reactive, adapting to both mobile and larger screen layouts.
 * With a swift click of a button, the user can be assured that their events will be saved, safe and secure thanks the planner's use of local storage. Simply refresh the page, and the information remains!
 
+![planner](./assets/gifs/planner.gif)
+
 
 # Technology
 The design of this application was made possible with the following Development Tools:
