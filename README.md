@@ -9,9 +9,9 @@
 - [Contact](#contact)
 
 # Description
+Today, life moves a mile a minute. And having the appropriate tools to organize your daily activities can effectively increase productivity, while reducing stress. But with such a wide variety of planners on the market, many offering features that extend far beyond practical organizational needs, many consumers are suffering from choice overload -- a cognitive impairment in which people have a difficult time making a decision. It is time to take the complexity out of picking the perfect planner! Introducing Work Day Scheduler.
 
-This Day Planner application is a simple, yet efficient, tool to help organize your work day.  
-
+Work Day Scheduler is a simple, yet efficient, tool to help organize your work day. It eliminates all of the needless bells and whistles of modern day organizers while providing users with a quick and seamless means to create, read, update, and delete daily tasks. Its responsive design makes it suitable for any size screen, and perfect for individuals who are constantly on the go.
 
 
 <img src="assets/images/planner.png" width="400">
